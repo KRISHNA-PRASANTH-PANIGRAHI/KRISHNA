@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyA7WRDD167GlYNFIxZTsHZjYnrtt4s4uUc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>588329753367</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.mycompany.guided</string>
+	<key>PROJECT_ID</key>
+	<string>guid-ed-oyeuug</string>
+	<key>STORAGE_BUCKET</key>
+	<string>guid-ed-oyeuug.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:588329753367:ios:5198a5f47d17172318b552</string>
+</dict>
+</plist>
