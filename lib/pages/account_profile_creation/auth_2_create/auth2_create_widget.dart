@@ -33,7 +33,7 @@ class _Auth2CreateWidgetState extends State<Auth2CreateWidget>
     super.initState();
     _model = createModel(context, () => Auth2CreateModel());
 
-    _model.textController ??= TextEditingController();
+    _model.textController1 ??= TextEditingController();
     _model.textFieldFocusNode ??= FocusNode();
 
     _model.emailAddressTextController ??= TextEditingController();
@@ -236,7 +236,7 @@ class _Auth2CreateWidgetState extends State<Auth2CreateWidget>
                                       width: MediaQuery.sizeOf(context).width *
                                           0.9,
                                       child: TextFormField(
-                                        controller: _model.textController,
+                                        controller: _model.textController1,
                                         focusNode: _model.textFieldFocusNode,
                                         autofocus: false,
                                         obscureText: false,
@@ -308,7 +308,7 @@ class _Auth2CreateWidgetState extends State<Auth2CreateWidget>
                                             ),
                                         textAlign: TextAlign.center,
                                         validator: _model
-                                            .textControllerValidator
+                                            .textController1Validator
                                             .asValidator(context),
                                       ),
                                     ),
@@ -482,22 +482,8 @@ class _Auth2CreateWidgetState extends State<Auth2CreateWidget>
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 16.0),
                                   child: FFButtonWidget(
-                                    onPressed: () async {
-                                      GoRouter.of(context).prepareAuthEvent();
-
-                                      final user = await authManager
-                                          .createAccountWithEmail(
-                                        context,
-                                        _model.emailAddressTextController.text,
-                                        _model.passwordTextController.text,
-                                      );
-                                      if (user == null) {
-                                        return;
-                                      }
-
-                                      context.pushNamedAuth(
-                                          Auth2LoginWidget.routeName,
-                                          context.mounted);
+                                    onPressed: () {
+                                      print('Button pressed ...');
                                     },
                                     text: 'Create Account',
                                     options: FFButtonOptions(

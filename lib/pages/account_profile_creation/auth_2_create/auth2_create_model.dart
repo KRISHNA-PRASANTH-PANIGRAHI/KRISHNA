@@ -8,8 +8,8 @@ class Auth2CreateModel extends FlutterFlowModel<Auth2CreateWidget> {
 
   // State field(s) for TextField widget.
   FocusNode? textFieldFocusNode;
-  TextEditingController? textController;
-  String? Function(BuildContext, String?)? textControllerValidator;
+  TextEditingController? textController1;
+  String? Function(BuildContext, String?)? textController1Validator;
   // State field(s) for emailAddress widget.
   FocusNode? emailAddressFocusNode;
   TextEditingController? emailAddressTextController;
@@ -28,7 +28,7 @@ class Auth2CreateModel extends FlutterFlowModel<Auth2CreateWidget> {
   @override
   void dispose() {
     textFieldFocusNode?.dispose();
-    textController?.dispose();
+    textController1?.dispose();
 
     emailAddressFocusNode?.dispose();
     emailAddressTextController?.dispose();
