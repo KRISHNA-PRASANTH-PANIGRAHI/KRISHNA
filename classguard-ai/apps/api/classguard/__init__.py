@@ -1,1 +1,0 @@
-"""ClassGuard AI application foundation."""
